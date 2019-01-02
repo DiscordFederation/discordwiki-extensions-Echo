@@ -6,10 +6,12 @@
 
 	&-popup {
 		> .oo-ui-popupWidget-popup {
+			background-color: @background-color-base;
 			> .oo-ui-popupWidget-head {
 				.box-sizing( border-box );
 				height: 3.1428571em; // = 44px as result of 44 / 16 (font-size browser) / 0.875 (OOUI WikimediaUI theme font-size)
-				border-bottom: 1px solid #c8ccd1;
+				border-bottom: 1px solid #2d3136;
+				background-color: @background-color-base;
 
 				> .oo-ui-iconWidget {
 					float: left;
@@ -19,6 +21,7 @@
 				}
 
 				> .oo-ui-labelElement-label {
+					color: #cdcfd0; //Notice
 					margin: 0 0 0 0.4761905em; // = 8px as result of ≈0.5714286 / 1.2 (element's font-size)
 					font-size: 1.2em;
 					font-weight: bold;
@@ -57,7 +60,7 @@
 			> .oo-ui-popupWidget-footer {
 				width: 100%;
 				margin: 0; // Override OOUI's popup footer margins (T171302)
-				border-top: 1px solid #c8ccd1;
+				border-top: 1px solid #2d3136;
 
 				> .oo-ui-buttonGroupWidget {
 					display: block;
@@ -73,10 +76,11 @@
 						.box-sizing( border-box );
 
 						&:last-child {
-							border-left: 1px solid #c8ccd1;
+							border-left: 1px solid #2d3136;
 						}
 
 						> .oo-ui-buttonElement-button {
+							background-color: @background-color-base;
 							display: block;
 							line-height: 3.1428571em;
 							margin: 0;
